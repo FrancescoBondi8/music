@@ -10,10 +10,12 @@ import com.example.music.model.Artista;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Set;
 
 public class MusicApp {
     public static void main(String[] args) {
+        /*
         Artista inserito = null;
 
         Artista artista = new Artista();
@@ -42,5 +44,10 @@ public class MusicApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        */
+
+
+        AlbumDao albumDao = new AlbumDaoImpl();
+        albumDao.findAll();
     }
 }

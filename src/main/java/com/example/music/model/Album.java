@@ -84,7 +84,8 @@ public class Album {
 
     @Override
     public String toString() {
-        return super.toString();
+
+        return "ID: " + albumid + " Titolo: " + titolo;
     }
 
     public LocalDateTime getDataInserimento() {
